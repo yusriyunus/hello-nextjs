@@ -1,12 +1,10 @@
-import Link from "next/link";
+import Header from "../component/Header";
 
 function Index() {
   return (
     <div>
+      <Header />
       <h3>Hello Next js!</h3>
-      <Link href="/about" title="About Page">
-        <a>Go to About Page</a>
-      </Link>
     </div>
   );
 }
