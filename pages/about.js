@@ -1,10 +1,7 @@
-import Header from "../component/Header";
+import Layout from "../comps/Layout";
 
-export default function About() {
-  return (
-    <div>
-      <Header />
-      <h3>This is About Page</h3>
-    </div>
-  );
+function About() {
+  return <h3>This is About Page</h3>;
 }
+
+export default Layout(About);

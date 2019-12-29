@@ -1,12 +1,7 @@
-import Header from "../component/Header";
+import Layout from "../comps/Layout";
 
 function Index() {
-  return (
-    <div>
-      <Header />
-      <h3>Hello Next js!</h3>
-    </div>
-  );
+  return <h3>Hello Next-js!</h3>;
 }
 
-export default Index;
+export default Layout(Index);
