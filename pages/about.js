@@ -1,7 +1,11 @@
 import Layout from "../comps/Layout";
 
 function About() {
-  return <h3>This is About Page</h3>;
+  return (
+    <Layout>
+      <h3>This is About Page</h3>
+    </Layout>
+  );
 }
 
-export default Layout(About);
+export default About;

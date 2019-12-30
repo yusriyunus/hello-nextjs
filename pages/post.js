@@ -5,11 +5,11 @@ function Page() {
   let router = useRouter();
 
   return (
-    <>
+    <Layout>
       <h1>{router.query.title}</h1>
       <p>This is Blog Post Content!</p>
-    </>
+    </Layout>
   );
 }
 
-export default Layout(Page);
+export default Page;
