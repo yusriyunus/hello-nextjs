@@ -13,6 +13,8 @@ class Index extends Component {
     let res = await fetch("https://api.tvmaze.com/search/shows?q=batman");
     let data = await res.json();
 
+    console.log(`Show data fetched. Count: ${data.length}`);
+
     return {
       shows: data.map(function(entry) {
         return entry.show;
