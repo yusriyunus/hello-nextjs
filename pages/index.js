@@ -1,11 +1,11 @@
 import Layout from "../comps/Layout";
 import Link from "next/link";
 
-function PostLink({ title }) {
+function PostLink({ id }) {
   return (
     <li>
-      <Link href={`/post?title=${title}`}>
-        <a>{title}</a>
+      <Link href="/p/[id]" as={`/p/${id}`}>
+        <a>{id}</a>
       </Link>
     </li>
   );
@@ -16,9 +16,9 @@ function Index() {
     <>
       <h3>Hello Next-js!</h3>
       <ul>
-        <PostLink title="Set clear career path" />
-        <PostLink title="Never skip practice" />
-        <PostLink title="Stay motivated" />
+        <PostLink id="Set clear career path" />
+        <PostLink id="Never skip practice" />
+        <PostLink id="Stay motivated" />
       </ul>
     </>
   );
